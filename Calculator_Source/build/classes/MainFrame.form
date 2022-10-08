@@ -28,269 +28,214 @@
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                  <Component id="calText" max="32767" attributes="0"/>
-                  <Group type="102" attributes="0">
+              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="calText" alignment="0" min="-2" pref="555" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="jButton28" pref="0" max="32767" attributes="0"/>
+                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                              <Component id="jButton40" min="-2" pref="60" max="-2" attributes="0"/>
+                              <Component id="jButton36" min="-2" pref="60" max="-2" attributes="0"/>
+                              <Component id="jButton32" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                              <Component id="jButton44" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
-                              <Component id="calHex" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="calDec" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="calOct" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="calBin" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="calInv" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="calHyp" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                                  <Component id="jButton40" pref="0" max="32767" attributes="0"/>
-                                  <Component id="jButton36" pref="0" max="32767" attributes="0"/>
-                                  <Component id="jButton32" alignment="0" pref="0" max="32767" attributes="0"/>
-                                  <Component id="jButton28" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
-                                  <Component id="jButton44" alignment="0" pref="0" max="32767" attributes="0"/>
-                              </Group>
-                              <EmptySpace max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                          <Component id="jButton33" pref="0" max="32767" attributes="0"/>
-                                          <Component id="jButton29" pref="60" max="32767" attributes="0"/>
-                                      </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="jButton33" min="-2" pref="60" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jButton30" min="-2" pref="60" max="-2" attributes="0"/>
-                                          <Component id="jButton34" min="-2" pref="60" max="-2" attributes="0"/>
-                                      </Group>
+                                      <Component id="calLn" min="-2" pref="60" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                           <Component id="jButton37" min="-2" pref="60" max="-2" attributes="0"/>
-                                          <Component id="jButton41" pref="0" max="32767" attributes="0"/>
-                                          <Component id="jButton45" alignment="0" pref="0" max="32767" attributes="0"/>
+                                          <Component id="calSquared" min="-2" pref="60" max="-2" attributes="0"/>
+                                          <Component id="jButton45" alignment="0" min="-2" pref="60" max="-2" attributes="0"/>
+                                      </Group>
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <EmptySpace max="32767" attributes="0"/>
+                                              <Component id="calLog" min="-2" pref="60" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="calFoun" min="-2" pref="60" max="-2" attributes="0"/>
+                                                  <Component id="calFactorial" alignment="1" min="-2" pref="60" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="cal1" min="-2" pref="50" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="cal2" min="-2" pref="50" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="cal3" min="-2" pref="50" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="calMin" min="-2" pref="50" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="calLsh" min="-2" pref="60" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="calXor" min="-2" pref="60" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Component id="cal0" min="-2" pref="106" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="calDot" min="-2" pref="50" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="calAdd" min="-2" pref="50" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="calRes" min="-2" pref="60" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="calNot" min="-2" pref="60" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="cal7" min="-2" pref="50" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="cal8" min="-2" pref="50" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="cal9" min="-2" pref="50" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="calDiv" min="-2" pref="50" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="calMod" min="-2" pref="60" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="cal4" min="-2" pref="50" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="cal5" min="-2" pref="50" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="cal6" min="-2" pref="50" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="calMul" min="-2" pref="50" max="-2" attributes="0"/>
+                                              <EmptySpace min="-2" max="-2" attributes="0"/>
+                                              <Component id="calRsh" min="-2" pref="60" max="-2" attributes="0"/>
+                                          </Group>
                                       </Group>
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jButton42" min="-2" pref="60" max="-2" attributes="0"/>
-                                          <Component id="jButton38" min="-2" pref="60" max="-2" attributes="0"/>
-                                          <Component id="jButton46" pref="0" max="32767" attributes="0"/>
+                                          <Component id="calOr" min="-2" pref="60" max="-2" attributes="0"/>
+                                          <Component id="calAnd" min="-2" pref="60" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                               </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="103" alignment="1" groupAlignment="0" attributes="0">
-                                      <Component id="jButton35" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
-                                      <Component id="jButton39" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
-                                      <Component id="jButton43" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="jButton31" alignment="1" min="-2" pref="50" max="-2" attributes="0"/>
-                                  <Component id="jButton48" min="-2" pref="50" max="-2" attributes="0"/>
-                              </Group>
                           </Group>
-                      </Group>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
+                              <Component id="calPi" min="-2" pref="58" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
                               <Component id="calDeg" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="calRad" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="calGra" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="cal1" min="-2" pref="50" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="cal2" min="-2" pref="50" max="-2" attributes="0"/>
+                              <Component id="calBack" min="-2" pref="100" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="cal3" min="-2" pref="50" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="calMin" min="-2" pref="50" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="calLsh" min="-2" pref="60" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="calXor" min="-2" pref="60" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="cal0" min="-2" pref="106" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="calDot" min="-2" pref="50" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="calAdd" min="-2" pref="50" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="calRes" min="-2" pref="60" max="-2" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                              <Component id="calNot" min="-2" pref="60" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="103" alignment="0" groupAlignment="1" attributes="0">
-                              <Group type="102" alignment="1" attributes="0">
-                                  <Component id="calBack" min="-2" pref="100" max="-2" attributes="0"/>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="jButton3" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <Group type="102" alignment="0" attributes="0">
-                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                      <Group type="102" attributes="0">
-                                          <Component id="cal7" min="-2" pref="50" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="cal8" min="-2" pref="50" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="cal9" min="-2" pref="50" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="calDiv" min="-2" pref="50" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="calMod" min="-2" pref="60" max="-2" attributes="0"/>
-                                      </Group>
-                                      <Group type="102" attributes="0">
-                                          <Component id="cal4" min="-2" pref="50" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="cal5" min="-2" pref="50" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="cal6" min="-2" pref="50" max="-2" attributes="0"/>
-                                          <EmptySpace max="-2" attributes="0"/>
-                                          <Component id="calMul" min="-2" pref="50" max="-2" attributes="0"/>
-                                          <EmptySpace max="32767" attributes="0"/>
-                                          <Component id="calRsh" min="-2" pref="60" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="calOr" min="-2" pref="60" max="-2" attributes="0"/>
-                                      <Component id="calAnd" min="-2" pref="60" max="-2" attributes="0"/>
-                                  </Group>
-                              </Group>
+                              <Component id="calClear" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="123" max="32767" attributes="0"/>
+              <EmptySpace pref="32" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
               <Component id="calText" min="-2" max="-2" attributes="0"/>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="calHex" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="calDec" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="calOct" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="calBin" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="calDeg" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="calRad" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="calGra" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
               <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="calInv" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="calHyp" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="calBack" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton3" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="calDeg" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="calRad" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="calGra" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="calBack" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="calClear" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="calPi" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton28" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cal7" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cal8" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cal9" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="calDiv" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="calMod" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="calAnd" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cal4" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cal5" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cal6" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="calMul" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="calOr" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="calRsh" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="calLog" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cal1" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cal2" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cal3" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="calMin" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="calXor" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="calLsh" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="calFactorial" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cal0" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="calDot" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="calAdd" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="calRes" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="calNot" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="1" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jButton32" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton33" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="calLn" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jButton36" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton37" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jButton40" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="calSquared" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="jButton44" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="jButton45" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="calFoun" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="cal7" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cal8" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cal9" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="calDiv" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="calMod" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="calAnd" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton28" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton30" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton31" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton29" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="cal4" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cal5" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cal6" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="calMul" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="calOr" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton32" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton33" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton34" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton35" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="calRsh" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="cal1" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cal2" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="cal3" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="calMin" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton36" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton37" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton38" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton39" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="calXor" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="calLsh" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="cal0" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="calDot" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="calAdd" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="calRes" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton40" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton42" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton43" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton41" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="calNot" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="jButton44" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton45" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton46" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="jButton48" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace pref="93" max="32767" attributes="0"/>
+              <EmptySpace pref="39" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
     <Component class="javax.swing.JTextField" name="calText">
-    </Component>
-    <Component class="javax.swing.JRadioButton" name="calHex">
-      <Properties>
-        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-          <ComponentRef name="buttonGroup1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Hex"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JRadioButton" name="calDec">
-      <Properties>
-        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-          <ComponentRef name="buttonGroup1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Dec"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JRadioButton" name="calOct">
-      <Properties>
-        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-          <ComponentRef name="buttonGroup1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Oct"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JRadioButton" name="calBin">
-      <Properties>
-        <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-          <ComponentRef name="buttonGroup1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Bin"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="calDeg">
       <Properties>
@@ -307,16 +252,6 @@
         <Property name="text" type="java.lang.String" value="Grads"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JCheckBox" name="calHyp">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Hyp"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JCheckBox" name="calInv">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Inv"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JButton" name="calBack">
       <Properties>
         <Property name="text" type="java.lang.String" value="Backspace"/>
@@ -328,7 +263,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="calBackActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton3">
+    <Component class="javax.swing.JButton" name="calClear">
       <Properties>
         <Property name="text" type="java.lang.String" value="C"/>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -336,7 +271,7 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton3ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="calClearActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="cal7">
@@ -600,30 +535,6 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton29">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="("/>
-        <Property name="bounds" type="java.awt.Rectangle" editor="org.netbeans.beaninfo.editors.RectangleEditor">
-          <Rectangle value="[0, 0, 60, 23]"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton30">
-      <Properties>
-        <Property name="text" type="java.lang.String" value=")"/>
-        <Property name="size" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[50, 23]"/>
-        </Property>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton31">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="MC"/>
-        <Property name="size" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[50, 23]"/>
-        </Property>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JButton" name="jButton32">
       <Properties>
         <Property name="text" type="java.lang.String" value="dms"/>
@@ -640,21 +551,16 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton34">
+    <Component class="javax.swing.JButton" name="calLn">
       <Properties>
         <Property name="text" type="java.lang.String" value="In"/>
         <Property name="size" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[50, 23]"/>
         </Property>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton35">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="MR"/>
-        <Property name="size" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[50, 23]"/>
-        </Property>
-      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="calLnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton36">
       <Properties>
@@ -672,21 +578,16 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton38">
+    <Component class="javax.swing.JButton" name="calFactorial">
       <Properties>
         <Property name="text" type="java.lang.String" value="n!"/>
         <Property name="size" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[50, 23]"/>
         </Property>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton39">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="MS"/>
-        <Property name="size" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[50, 23]"/>
-        </Property>
-      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="calFactorialActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton40">
       <Properties>
@@ -696,29 +597,27 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton41">
+    <Component class="javax.swing.JButton" name="calSquared">
       <Properties>
         <Property name="text" type="java.lang.String" value="x^2"/>
         <Property name="size" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[50, 23]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="calSquaredActionPerformed"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton42">
+    <Component class="javax.swing.JButton" name="calLog">
       <Properties>
-        <Property name="text" type="java.lang.String" value="1/x"/>
+        <Property name="text" type="java.lang.String" value="log"/>
         <Property name="size" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[50, 23]"/>
         </Property>
       </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="jButton43">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="M+"/>
-        <Property name="size" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[50, 23]"/>
-        </Property>
-      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="calLogActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jButton44">
       <Properties>
@@ -736,21 +635,27 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton46">
+    <Component class="javax.swing.JButton" name="calFoun">
       <Properties>
         <Property name="text" type="java.lang.String" value="1/x"/>
         <Property name="size" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[50, 23]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="calFounActionPerformed"/>
+      </Events>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton48">
+    <Component class="javax.swing.JButton" name="calPi">
       <Properties>
         <Property name="text" type="java.lang.String" value="pi"/>
         <Property name="size" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
           <Dimension value="[50, 23]"/>
         </Property>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="calPiActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>

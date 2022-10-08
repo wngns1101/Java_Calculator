@@ -1,3 +1,6 @@
+
+import javax.swing.JOptionPane;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -27,17 +30,11 @@ public class MainFrame extends javax.swing.JFrame {
 
         buttonGroup1 = new javax.swing.ButtonGroup();
         calText = new javax.swing.JTextField();
-        calHex = new javax.swing.JRadioButton();
-        calDec = new javax.swing.JRadioButton();
-        calOct = new javax.swing.JRadioButton();
-        calBin = new javax.swing.JRadioButton();
         calDeg = new javax.swing.JRadioButton();
         calRad = new javax.swing.JRadioButton();
         calGra = new javax.swing.JRadioButton();
-        calHyp = new javax.swing.JCheckBox();
-        calInv = new javax.swing.JCheckBox();
         calBack = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        calClear = new javax.swing.JButton();
         cal7 = new javax.swing.JButton();
         cal8 = new javax.swing.JButton();
         cal9 = new javax.swing.JButton();
@@ -62,49 +59,27 @@ public class MainFrame extends javax.swing.JFrame {
         calNot = new javax.swing.JButton();
         calRsh = new javax.swing.JButton();
         jButton28 = new javax.swing.JButton();
-        jButton29 = new javax.swing.JButton();
-        jButton30 = new javax.swing.JButton();
-        jButton31 = new javax.swing.JButton();
         jButton32 = new javax.swing.JButton();
         jButton33 = new javax.swing.JButton();
-        jButton34 = new javax.swing.JButton();
-        jButton35 = new javax.swing.JButton();
+        calLn = new javax.swing.JButton();
         jButton36 = new javax.swing.JButton();
         jButton37 = new javax.swing.JButton();
-        jButton38 = new javax.swing.JButton();
-        jButton39 = new javax.swing.JButton();
+        calFactorial = new javax.swing.JButton();
         jButton40 = new javax.swing.JButton();
-        jButton41 = new javax.swing.JButton();
-        jButton42 = new javax.swing.JButton();
-        jButton43 = new javax.swing.JButton();
+        calSquared = new javax.swing.JButton();
+        calLog = new javax.swing.JButton();
         jButton44 = new javax.swing.JButton();
         jButton45 = new javax.swing.JButton();
-        jButton46 = new javax.swing.JButton();
-        jButton48 = new javax.swing.JButton();
+        calFoun = new javax.swing.JButton();
+        calPi = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        buttonGroup1.add(calHex);
-        calHex.setText("Hex");
-
-        buttonGroup1.add(calDec);
-        calDec.setText("Dec");
-
-        buttonGroup1.add(calOct);
-        calOct.setText("Oct");
-
-        buttonGroup1.add(calBin);
-        calBin.setText("Bin");
 
         calDeg.setText("Degrees");
 
         calRad.setText("Radians");
 
         calGra.setText("Grads");
-
-        calHyp.setText("Hyp");
-
-        calInv.setText("Inv");
 
         calBack.setText("Backspace");
         calBack.setPreferredSize(new java.awt.Dimension(100, 23));
@@ -114,11 +89,11 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setText("C");
-        jButton3.setPreferredSize(new java.awt.Dimension(100, 23));
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        calClear.setText("C");
+        calClear.setPreferredSize(new java.awt.Dimension(100, 23));
+        calClear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                calClearActionPerformed(evt);
             }
         });
 
@@ -309,26 +284,19 @@ public class MainFrame extends javax.swing.JFrame {
         jButton28.setText("F-E");
         jButton28.setSize(new java.awt.Dimension(50, 23));
 
-        jButton29.setText("(");
-        jButton29.setBounds(new java.awt.Rectangle(0, 0, 60, 23));
-
-        jButton30.setText(")");
-        jButton30.setSize(new java.awt.Dimension(50, 23));
-
-        jButton31.setText("MC");
-        jButton31.setSize(new java.awt.Dimension(50, 23));
-
         jButton32.setText("dms");
         jButton32.setSize(new java.awt.Dimension(50, 23));
 
         jButton33.setText("Exp");
         jButton33.setSize(new java.awt.Dimension(50, 23));
 
-        jButton34.setText("In");
-        jButton34.setSize(new java.awt.Dimension(50, 23));
-
-        jButton35.setText("MR");
-        jButton35.setSize(new java.awt.Dimension(50, 23));
+        calLn.setText("In");
+        calLn.setSize(new java.awt.Dimension(50, 23));
+        calLn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                calLnActionPerformed(evt);
+            }
+        });
 
         jButton36.setText("sin");
         jButton36.setSize(new java.awt.Dimension(50, 23));
@@ -336,23 +304,32 @@ public class MainFrame extends javax.swing.JFrame {
         jButton37.setText("x^y");
         jButton37.setSize(new java.awt.Dimension(50, 23));
 
-        jButton38.setText("n!");
-        jButton38.setSize(new java.awt.Dimension(50, 23));
-
-        jButton39.setText("MS");
-        jButton39.setSize(new java.awt.Dimension(50, 23));
+        calFactorial.setText("n!");
+        calFactorial.setSize(new java.awt.Dimension(50, 23));
+        calFactorial.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                calFactorialActionPerformed(evt);
+            }
+        });
 
         jButton40.setText("cos");
         jButton40.setSize(new java.awt.Dimension(50, 23));
 
-        jButton41.setText("x^2");
-        jButton41.setSize(new java.awt.Dimension(50, 23));
+        calSquared.setText("x^2");
+        calSquared.setSize(new java.awt.Dimension(50, 23));
+        calSquared.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                calSquaredActionPerformed(evt);
+            }
+        });
 
-        jButton42.setText("1/x");
-        jButton42.setSize(new java.awt.Dimension(50, 23));
-
-        jButton43.setText("M+");
-        jButton43.setSize(new java.awt.Dimension(50, 23));
+        calLog.setText("log");
+        calLog.setSize(new java.awt.Dimension(50, 23));
+        calLog.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                calLogActionPerformed(evt);
+            }
+        });
 
         jButton44.setText("tan");
         jButton44.setSize(new java.awt.Dimension(50, 23));
@@ -360,211 +337,198 @@ public class MainFrame extends javax.swing.JFrame {
         jButton45.setText("x^2");
         jButton45.setSize(new java.awt.Dimension(50, 23));
 
-        jButton46.setText("1/x");
-        jButton46.setSize(new java.awt.Dimension(50, 23));
+        calFoun.setText("1/x");
+        calFoun.setSize(new java.awt.Dimension(50, 23));
+        calFoun.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                calFounActionPerformed(evt);
+            }
+        });
 
-        jButton48.setText("pi");
-        jButton48.setSize(new java.awt.Dimension(50, 23));
+        calPi.setText("pi");
+        calPi.setSize(new java.awt.Dimension(50, 23));
+        calPi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                calPiActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(calText)
+                .addGap(17, 17, 17)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(calText, javax.swing.GroupLayout.PREFERRED_SIZE, 555, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(jButton40, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jButton36, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jButton32, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jButton44, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(calHex)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(calDec)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(calOct)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(calBin))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(calInv)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(calHyp))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jButton40, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
-                                    .addComponent(jButton36, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
-                                    .addComponent(jButton32, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
-                                    .addComponent(jButton28, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton44, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addComponent(jButton33, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
-                                            .addComponent(jButton29, javax.swing.GroupLayout.DEFAULT_SIZE, 60, Short.MAX_VALUE))
+                                        .addComponent(jButton33, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jButton30, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jButton34, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addComponent(calLn, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                             .addComponent(jButton37, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jButton41, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE)
-                                            .addComponent(jButton45, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))
+                                            .addComponent(calSquared, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(jButton45, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                                .addComponent(calLog, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(calFoun, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(calFactorial, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))))))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(cal1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(cal2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(cal3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(calMin, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(calLsh, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(calXor, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(cal0, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(calDot, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(calAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(calRes, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(calNot, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(cal7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(cal8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(cal9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(calDiv, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(calMod, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(cal4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(cal5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(cal6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(calMul, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(calRsh, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jButton42, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jButton38, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jButton46, javax.swing.GroupLayout.PREFERRED_SIZE, 1, Short.MAX_VALUE))))
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(jButton35, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jButton39, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jButton43, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jButton31, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButton48, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(calOr, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(calAnd, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                             .addGroup(layout.createSequentialGroup()
+                                .addComponent(calPi, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(calDeg)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(calRad)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(calGra))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(cal1, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(calGra)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cal2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(calBack, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cal3, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(calMin, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(calLsh, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(calXor, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(cal0, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(calDot, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(calAdd, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(calRes, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(calNot, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addComponent(calBack, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addComponent(cal7, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(cal8, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(cal9, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(calDiv, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(calMod, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addComponent(cal4, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(cal5, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(cal6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                            .addComponent(calMul, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                            .addComponent(calRsh, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(calOr, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(calAnd, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
-                .addContainerGap(123, Short.MAX_VALUE))
+                                .addComponent(calClear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(32, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(24, 24, 24)
+                .addGap(15, 15, 15)
                 .addComponent(calText, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(calHex)
-                    .addComponent(calDec)
-                    .addComponent(calOct)
-                    .addComponent(calBin)
-                    .addComponent(calDeg)
-                    .addComponent(calRad)
-                    .addComponent(calGra))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(calInv)
-                    .addComponent(calHyp)
-                    .addComponent(calBack, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cal7)
-                    .addComponent(cal8)
-                    .addComponent(cal9)
-                    .addComponent(calDiv)
-                    .addComponent(calMod)
-                    .addComponent(calAnd)
-                    .addComponent(jButton28)
-                    .addComponent(jButton30)
-                    .addComponent(jButton31)
-                    .addComponent(jButton29))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cal4)
-                    .addComponent(cal5)
-                    .addComponent(cal6)
-                    .addComponent(calMul)
-                    .addComponent(calOr)
-                    .addComponent(jButton32)
-                    .addComponent(jButton33)
-                    .addComponent(jButton34)
-                    .addComponent(jButton35)
-                    .addComponent(calRsh))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cal1)
-                    .addComponent(cal2)
-                    .addComponent(cal3)
-                    .addComponent(calMin)
-                    .addComponent(jButton36)
-                    .addComponent(jButton37)
-                    .addComponent(jButton38)
-                    .addComponent(jButton39)
-                    .addComponent(calXor)
-                    .addComponent(calLsh))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(cal0)
-                    .addComponent(calDot)
-                    .addComponent(calAdd)
-                    .addComponent(calRes)
-                    .addComponent(jButton40)
-                    .addComponent(jButton42)
-                    .addComponent(jButton43)
-                    .addComponent(jButton41)
-                    .addComponent(calNot))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton44)
-                    .addComponent(jButton45)
-                    .addComponent(jButton46)
-                    .addComponent(jButton48))
-                .addContainerGap(93, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(calDeg)
+                            .addComponent(calRad)
+                            .addComponent(calGra)
+                            .addComponent(calBack, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(calClear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(calPi)
+                            .addComponent(jButton28))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(cal7)
+                            .addComponent(cal8)
+                            .addComponent(cal9)
+                            .addComponent(calDiv)
+                            .addComponent(calMod)
+                            .addComponent(calAnd))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(cal4)
+                            .addComponent(cal5)
+                            .addComponent(cal6)
+                            .addComponent(calMul)
+                            .addComponent(calOr)
+                            .addComponent(calRsh)
+                            .addComponent(calLog))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(cal1)
+                            .addComponent(cal2)
+                            .addComponent(cal3)
+                            .addComponent(calMin)
+                            .addComponent(calXor)
+                            .addComponent(calLsh)
+                            .addComponent(calFactorial))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(cal0)
+                            .addComponent(calDot)
+                            .addComponent(calAdd)
+                            .addComponent(calRes)
+                            .addComponent(calNot)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton32)
+                            .addComponent(jButton33)
+                            .addComponent(calLn))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton36)
+                            .addComponent(jButton37))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton40)
+                            .addComponent(calSquared))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton44)
+                            .addComponent(jButton45)
+                            .addComponent(calFoun))))
+                .addContainerGap(39, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    int result = 0;
+    double doubleResult = 0;
+    int intResult = 0;
     private void cal0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cal0ActionPerformed
         calText.setText(calText.getText() + cal0.getText());
     }//GEN-LAST:event_cal0ActionPerformed
@@ -624,39 +588,35 @@ public class MainFrame extends javax.swing.JFrame {
     private void calResActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calResActionPerformed
         String str[] = calText.getText().split(" ");
         if(str[1].equals("+")){
-            result = Integer.parseInt(str[0]) + Integer.parseInt(str[2]);
-            calText.setText(Integer.toString(result));
+            doubleResult = Double.parseDouble(str[0]) + Double.parseDouble(str[2]);
+            calText.setText(Double.toString(doubleResult));
         }else if(str[1].equals("-")){
-            result = Integer.parseInt(str[0]) - Integer.parseInt(str[2]);
-            calText.setText(Integer.toString(result));
+            doubleResult = Double.parseDouble(str[0]) - Double.parseDouble(str[2]);
+            calText.setText(Double.toString(doubleResult));
         }else if(str[1].equals("*")){
-            result = Integer.parseInt(str[0]) * Integer.parseInt(str[2]);
-            calText.setText(Integer.toString(result));
+            doubleResult = Double.parseDouble(str[0]) * Double.parseDouble(str[2]);
+            calText.setText(Double.toString(doubleResult));
         }else if(str[1].equals("/")){
-            result = Integer.parseInt(str[0]) / Integer.parseInt(str[2]);
-            calText.setText(Integer.toString(result));
+            doubleResult = Double.parseDouble(str[0]) / Double.parseDouble(str[2]);
+            calText.setText(Double.toString(doubleResult));
         }else if(str[1].equals("%")){
-            result = Integer.parseInt(str[0]) % Integer.parseInt(str[2]);
-            calText.setText(Integer.toString(result));
+            doubleResult = Double.parseDouble(str[0]) % Double.parseDouble(str[2]);
+            calText.setText(Double.toString(doubleResult));
         }else if(str[1].equals("<<")){
-            result = Integer.parseInt(str[0]) << Integer.parseInt(str[2]);
-            calText.setText(Integer.toString(result));
+            intResult = Integer.parseInt(str[0]) << Integer.parseInt(str[2]);
+            calText.setText(Integer.toString(intResult));
         }else if(str[1].equals(">>")){
-            result = Integer.parseInt(str[0]) >> Integer.parseInt(str[2]);
-            calText.setText(Integer.toString(result));
+            intResult = Integer.parseInt(str[0]) >> Integer.parseInt(str[2]);
+            calText.setText(Integer.toString(intResult));
         }else if(str[1].equals("&")){
-            result = Integer.parseInt(str[0]) & Integer.parseInt(str[2]);
-            calText.setText(Integer.toString(result));
+            intResult = Integer.parseInt(str[0]) & Integer.parseInt(str[2]);
+            calText.setText(Integer.toString(intResult));
         }else if(str[1].equals("|")){
-            result = Integer.parseInt(str[0]) | Integer.parseInt(str[2]);
-            calText.setText(Integer.toString(result));
+            intResult = Integer.parseInt(str[0]) | Integer.parseInt(str[2]);
+            calText.setText(Integer.toString(intResult));
         }else if(str[1].equals("^")){
-            result = Integer.parseInt(str[0]) ^ Integer.parseInt(str[2]);
-            calText.setText(Integer.toString(result));
-        }else if(str[1].equals("~")){
-            result = Integer.parseInt(str[0]);
-            result = ~result;
-            calText.setText(Integer.toString(result));
+            intResult = Integer.parseInt(str[0]) ^ Integer.parseInt(str[2]);
+            calText.setText(Integer.toString(intResult));
         }
     }//GEN-LAST:event_calResActionPerformed
 
@@ -698,10 +658,41 @@ public class MainFrame extends javax.swing.JFrame {
         calText.setText(str);
     }//GEN-LAST:event_calBackActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void calClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calClearActionPerformed
         calText.setText("");
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_calClearActionPerformed
 
+    private void calLnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calLnActionPerformed
+        calText.setText(Double.toString(Math.log(Integer.parseInt(calText.getText()))));
+    }//GEN-LAST:event_calLnActionPerformed
+
+    private void calLogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calLogActionPerformed
+        calText.setText(Double.toString(Math.log10(Integer.parseInt(calText.getText())) / Math.log10(2)));
+    }//GEN-LAST:event_calLogActionPerformed
+
+    private void calFactorialActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calFactorialActionPerformed
+        int index = Integer.parseInt(calText.getText());
+        int mul = 1;
+        for (int i=index; i>0; i--){
+            mul = mul * i;
+        }
+        calText.setText(Integer.toString(mul));
+    }//GEN-LAST:event_calFactorialActionPerformed
+
+    private void calFounActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calFounActionPerformed
+        double div = 1.0 / Double.parseDouble(calText.getText());
+        calText.setText(Double.toString(div));
+    }//GEN-LAST:event_calFounActionPerformed
+
+    private void calPiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calPiActionPerformed
+        calText.setText(Double.toString(Integer.parseInt(calText.getText()) * 3.14159265359));
+    }//GEN-LAST:event_calPiActionPerformed
+
+    private void calSquaredActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calSquaredActionPerformed
+        int no = Integer.parseInt(calText.getText());
+        calText.setText(Integer.toString(no * no));
+    }//GEN-LAST:event_calSquaredActionPerformed
+    
     /**
      * @param args the command line arguments
      */
@@ -752,47 +743,37 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JButton calAdd;
     private javax.swing.JButton calAnd;
     private javax.swing.JButton calBack;
-    private javax.swing.JRadioButton calBin;
-    private javax.swing.JRadioButton calDec;
+    private javax.swing.JButton calClear;
     private javax.swing.JRadioButton calDeg;
     private javax.swing.JButton calDiv;
     private javax.swing.JButton calDot;
+    private javax.swing.JButton calFactorial;
+    private javax.swing.JButton calFoun;
     private javax.swing.JRadioButton calGra;
-    private javax.swing.JRadioButton calHex;
-    private javax.swing.JCheckBox calHyp;
-    private javax.swing.JCheckBox calInv;
+    private javax.swing.JButton calLn;
+    private javax.swing.JButton calLog;
     private javax.swing.JButton calLsh;
     private javax.swing.JButton calMin;
     private javax.swing.JButton calMod;
     private javax.swing.JButton calMul;
     private javax.swing.JButton calNot;
-    private javax.swing.JRadioButton calOct;
     private javax.swing.JButton calOr;
+    private javax.swing.JButton calPi;
     private javax.swing.JRadioButton calRad;
     private javax.swing.JButton calRes;
     private javax.swing.JButton calRsh;
+    private javax.swing.JButton calSquared;
     private javax.swing.JTextField calText;
     private javax.swing.JButton calXor;
     private javax.swing.JButton jButton28;
-    private javax.swing.JButton jButton29;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton30;
-    private javax.swing.JButton jButton31;
     private javax.swing.JButton jButton32;
     private javax.swing.JButton jButton33;
-    private javax.swing.JButton jButton34;
-    private javax.swing.JButton jButton35;
     private javax.swing.JButton jButton36;
     private javax.swing.JButton jButton37;
-    private javax.swing.JButton jButton38;
-    private javax.swing.JButton jButton39;
     private javax.swing.JButton jButton40;
-    private javax.swing.JButton jButton41;
-    private javax.swing.JButton jButton42;
-    private javax.swing.JButton jButton43;
     private javax.swing.JButton jButton44;
     private javax.swing.JButton jButton45;
-    private javax.swing.JButton jButton46;
-    private javax.swing.JButton jButton48;
     // End of variables declaration//GEN-END:variables
+
+
 }
